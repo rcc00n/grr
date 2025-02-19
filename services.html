@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дополнительные услуги аренды авто в GreenRent">
+  <title>Услуги — GreenRent</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Хедер -->
+  <header>
+    <div class="header-line">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Логотип -->
+        <a href="index.html">
+          <img src="images/logo.png" alt="GreenRent" class="header-logo">
+        </a>
+        <!-- Меню -->
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="cars.html">Автомобили</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="advantages.html">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacts.html">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="rules.html">Правила</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="services.html">Цены</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="rental-prices" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 section-title">Цены на аренду автомобилей</h2>
+      <p class="text-center text-danger fw-bold">
+        Внимание! Цены указаны для зимы 2025
+      </p>
+  
+      <div class="table-responsive">
+        <table class="table table-bordered text-center table-rental">
+          <thead>
+            <tr>
+              <th>Марка авто</th>
+              <th>1-4 суток</th>
+              <th>5-14 суток</th>
+              <th>15+ суток</th>
+              <th>Залог</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="car-container">
+                  <img src="images/polo.jpg" alt="VW Polo AT 2019" class="car-img">
+                  <div class="car-name">VW Polo AT 2019</div>
+                </div>
+              </td>
+              <td class="price">2000 руб.</td>
+              <td class="price">1800 руб.</td>
+              <td class="price">1700 руб.</td>
+              <td class="deposit">10000 руб.</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="car-container">
+                  <img src="images/polo.jpg" alt="VW Polo MT 2020" class="car-img">
+                  <div class="car-name">VW Polo MT 2020</div>
+                </div>
+              </td>
+              <td class="price">2200 руб.</td>
+              <td class="price">1950 руб.</td>
+              <td class="price">1900 руб.</td>
+              <td class="deposit">10000 руб.</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="car-container">
+                  <img src="images/polo.jpg" alt="Kia Picanto AT 2014-2015" class="car-img">
+                  <div class="car-name">Kia Picanto AT 2014-2015</div>
+                </div>
+              </td>
+              <td class="price">2200 руб.</td>
+              <td class="price">1990 руб.</td>
+              <td class="price">1950 руб.</td>
+              <td class="deposit">10000 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <!-- Основной контент -->
+  <section class="container services-section py-5">
+    <h1 class="fw-bold text-center">Дополнительные услуги</h1>
+    <p class="text-center text-muted">Мы предлагаем ряд дополнительных опций для удобства наших клиентов.</p>
+
+    <div class="row g-4">
+      <!-- Услуга 1 -->
+      <div class="col-md-6">
+        <div class="service-card">
+          <h3>Аренда детского кресла</h3>
+          <p>Для безопасности маленьких пассажиров мы предлагаем детские кресла и бустеры.</p>
+          <p class="fw-bold text-success">Стоимость: 250 ₽/сутки</p>
+        </div>
+      </div>
+
+      <!-- Услуга 2 -->
+      <div class="col-md-6">
+        <div class="service-card">
+          <h3>Навигатор (GPS)</h3>
+          <p>Поможем вам легко ориентироваться в городе и за его пределами.</p>
+          <p class="fw-bold text-success">Стоимость: 300 ₽/сутки</p>
+        </div>
+      </div>
+
+      <!-- Услуга 3 -->
+      <div class="col-md-6">
+        <div class="service-card">
+          <h3>Выдача и возврат в аэропорту</h3>
+          <p>Доставим и заберём авто прямо в аэропорту Симферополя или Минеральных Вод.</p>
+          <p class="fw-bold text-success">Стоимость: от 1000 ₽</p>
+        </div>
+      </div>
+
+      <!-- Услуга 4 -->
+      <div class="col-md-6">
+        <div class="service-card">
+          <h3>Дополнительный водитель</h3>
+          <p>Добавление второго водителя бесплатно. Третий и последующие — за доплату.</p>
+          <p class="fw-bold text-success">Стоимость: 1000 ₽ (разово)</p>
+        </div>
+      </div>
+
+      <!-- Услуга 5 -->
+      <div class="col-md-6">
+        <div class="service-card">
+          <h3>Мойка автомобиля</h3>
+          <p>Если вы не хотите заботиться о чистоте перед возвратом, воспользуйтесь нашей услугой мойки.</p>
+          <p class="fw-bold text-success">Стоимость: от 500 ₽</p>
+        </div>
+      </div>
+
+      <!-- Услуга 6 -->
+      <div class="col-md-6">
+        <div class="service-card">
+          <h3>Выезд за пределы региона</h3>
+          <p>Разрешение на поездки за границы стандартной территории аренды.</p>
+          <p class="fw-bold text-success">Стоимость: по договорённости</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="py-4 bg-dark text-light text-center">
+    <p>&copy; 2024 GreenRent. Все права защищены.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

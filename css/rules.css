@@ -1,0 +1,78 @@
+/* Стили для страницы "Правила аренды" */
+.rules-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1b1b1b;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.2);
+  }
+  
+  .rules-section h1 {
+    color: #c0a060;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .rules-list {
+    padding-left: 20px;
+  }
+  
+  .rules-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .rules-list h2 {
+    color: #c0a060;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .rules-section {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+
+  .rules-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .rules-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .rules-content h2 {
+    font-size: 24px;
+    color: var(--color-primary);
+    margin-top: 30px;
+  }
+  
+  .rules-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .rules-content ul li {
+    background: url('../images/check-icon.png') no-repeat left center;
+    background-size: 18px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .rules-content p {
+    font-size: 18px;
+    color: #ddd;
+  }
+  

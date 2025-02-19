@@ -1,0 +1,168 @@
+/* Основные переменные */
+:root {
+  --color-primary: #007f00; /* Основной зелёный */
+  --color-accent: #c0a060; /* Золотистый акцент */
+  --color-dark: #111; /* Тёмный фон */
+  --color-text-light: #fff; /* Белый текст */
+}
+
+/* Общие стили */
+body {
+  font-family: 'Inter', 'Montserrat', sans-serif;
+  background-color: var(--color-dark);
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для заголовков */
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: var(--color-text-light);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
+/* Секция услуг */
+.services-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Карточки услуг */
+.service-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  border: 2px solid var(--color-primary);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 127, 0, 0.2);
+}
+
+.service-card h3 {
+  font-size: 22px;
+  color: var(--color-primary);
+}
+
+.service-card p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+/* 📌 Стили для таблицы аренды */
+.table-rental {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Заголовки таблицы */
+.table-rental th {
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 20px;
+  padding: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Ячейки таблицы */
+.table-rental td {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+  color: #333;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+
+/* Улучшенный стиль для названия автомобилей */
+.car-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.car-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  max-width: 200px; /* Ограничиваем максимальную ширину */
+  margin: 0 auto; /* Центрируем контейнер */
+}
+
+.car-img {
+  width: auto;  /* Автоматическая ширина */
+  max-width: 100%;  /* Не превышает ширину контейнера */
+  height: 120px;  /* Фиксированная высота */
+  object-fit: contain;  /* Полностью вписываем изображение, без обрезки */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+
+
+
+
+/* 📌 Улучшение отображения цен */
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+/* Стиль для залога */
+.deposit {
+  font-size: 22px;
+  font-weight: bold;
+  color: #c00;
+}
+
+/* Добавляем эффект при наведении */
+.table-rental tbody tr:hover {
+  background-color: rgba(0, 127, 0, 0.1);
+}
+
+/* ⚡ Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+  .car-img {
+    width: 100px;
+    height: 70px;
+  }
+
+  .table-rental th, .table-rental td {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .price, .deposit {
+    font-size: 18px;
+  }
+}
