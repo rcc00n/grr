@@ -1,0 +1,43 @@
+# --- ОСНОВНОЕ ---
+
+# Файлы окружения Python
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Локальная база данных SQLite
+db.sqlite3
+
+# Файлы настроек окружения/секретов, если есть
+.env
+
+# Файлы билдов/кэша
+*.log
+*.pot
+*.pyc
+*.swp
+.coverage
+*.mo
+
+# IDE / Редакторы
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# macOS системные файлы
+.DS_Store
+
+# Windows системные файлы
+Thumbs.db
+
+# Media и Static (если генерируются, напр. collectstatic)
+media/
+staticfiles/
+
+# Если используешь webpack / Node.js для фронтенда
+node_modules/
+dist/
