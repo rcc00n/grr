@@ -58,140 +58,23 @@
   </div>
 </header>
 
-
-<!-- Раздел «Наш автопарк» (10 автомобилей) -->
+<!-- Раздел «Наш автопарк» -->
 <section class="py-5 bg-section">
   <div class="container">
     <div class="text-center mb-5">
       <h1 class="fw-bold section-title">Наш автопарк</h1>
-      <p class="text-muted fs-5">Выберите подходящую модель из 10 доступных вариантов</p>
+      <p class="text-muted fs-5">
+        Выберите подходящую модель, все данные подтягиваются из админки
+      </p>
     </div>
 
-   <!-- Сетка из 8 карточек автомобилей -->
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-
-  <!-- 1. Hyundai Solaris -->
-  <div class="col">
-    <div class="car-card">
-      <p class="price">от <span class="highlight">2000 руб.</span></p>
-      <div class="car-img">
-        <img src="images/solaris.jpg" alt="Hyundai Solaris">
-      </div>
-      <h5 class="car-title">Hyundai Solaris</h5>
-      <ul class="car-specs">
-        <li><strong>Двигатель:</strong> 1.6 л</li>
-        <li><strong>Мощность:</strong> 123 л.с.</li>
-        <li><strong>Коробка передач:</strong> Автомат</li>
-        <li><strong>Привод:</strong> Передний</li>
-        <li><strong>Расход:</strong> 7.0 л/100 км</li>
-        <li><strong>Залог:</strong> <span class="highlight">10 000 руб.</span></li>
-      </ul>
-      <a href="cars/hyundai-solaris.html" class="rent-btn">Подробнее</a>
+    <!-- Тут будет выводиться список машин из API -->
+    <div 
+      class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+      id="carsContainer"
+    >
+      <!-- JS динамически заполнит этот блок -->
     </div>
-  </div>
-
-  <!-- 2. Kia Rio -->
-  <div class="col">
-    <div class="car-card">
-      <p class="price">от <span class="highlight">2100 руб.</span></p>
-      <div class="car-img">
-        <img src="images/rio.jpg" alt="Kia Rio">
-      </div>
-      <h5 class="car-title">Kia Rio</h5>
-      <ul class="car-specs">
-        <li><strong>Двигатель:</strong> 1.6 л</li>
-        <li><strong>Мощность:</strong> 123 л.с.</li>
-        <li><strong>Коробка передач:</strong> Автомат</li>
-        <li><strong>Привод:</strong> Передний</li>
-        <li><strong>Расход:</strong> 6.9 л/100 км</li>
-        <li><strong>Залог:</strong> <span class="highlight">10 000 руб.</span></li>
-      </ul>
-      <a href="cars/nissan-xtrail.html" class="rent-btn">Подробнее</a>
-    </div>
-  </div>
-
-  <!-- 3. Volkswagen Polo -->
-  <div class="col">
-    <div class="car-card">
-      <p class="price">от <span class="highlight">2200 руб.</span></p>
-      <div class="car-img">
-        <img src="images/polo.jpg" alt="Volkswagen Polo">
-      </div>
-      <h5 class="car-title">Volkswagen Polo</h5>
-      <ul class="car-specs">
-        <li><strong>Двигатель:</strong> 1.6 л</li>
-        <li><strong>Мощность:</strong> 110 л.с.</li>
-        <li><strong>Коробка передач:</strong> Автомат</li>
-        <li><strong>Привод:</strong> Передний</li>
-        <li><strong>Расход:</strong> 6.5 л/100 км</li>
-        <li><strong>Залог:</strong> <span class="highlight">12 000 руб.</span></li>
-      </ul>
-      <a href="cars/volkswagen-polo.html" class="rent-btn">Подробнее</a>
-    </div>
-  </div>
-
-  <!-- 4. Skoda Rapid -->
-  <div class="col">
-    <div class="car-card">
-      <p class="price">от <span class="highlight">2300 руб.</span></p>
-      <div class="car-img">
-        <img src="images/rapid.jpg" alt="Skoda Rapid">
-      </div>
-      <h5 class="car-title">Skoda Rapid</h5>
-      <ul class="car-specs">
-        <li><strong>Двигатель:</strong> 1.4 л TSI</li>
-        <li><strong>Мощность:</strong> 125 л.с.</li>
-        <li><strong>Коробка передач:</strong> Робот</li>
-        <li><strong>Привод:</strong> Передний</li>
-        <li><strong>Расход:</strong> 5.9 л/100 км</li>
-        <li><strong>Залог:</strong> <span class="highlight">15 000 руб.</span></li>
-      </ul>
-      <a href="cars/skoda-rapid.html" class="rent-btn">Подробнее</a>
-    </div>
-  </div>
-
-  <!-- 5. Toyota Camry -->
-  <div class="col">
-    <div class="car-card">
-      <p class="price">от <span class="highlight">3500 руб.</span></p>
-      <div class="car-img">
-        <img src="images/camry.jpg" alt="Toyota Camry">
-      </div>
-      <h5 class="car-title">Toyota Camry</h5>
-      <ul class="car-specs">
-        <li><strong>Двигатель:</strong> 2.5 л</li>
-        <li><strong>Мощность:</strong> 181 л.с.</li>
-        <li><strong>Коробка передач:</strong> Автомат</li>
-        <li><strong>Привод:</strong> Передний</li>
-        <li><strong>Расход:</strong> 8.0 л/100 км</li>
-        <li><strong>Залог:</strong> <span class="highlight">20 000 руб.</span></li>
-      </ul>
-      <a href="cars/toyota-camry.html" class="rent-btn">Подробнее</a>
-    </div>
-  </div>
-
-  <!-- 6. Nissan X-Trail -->
-  <div class="col">
-    <div class="car-card">
-      <p class="price">от <span class="highlight">4000 руб.</span></p>
-      <div class="car-img">
-        <img src="images/xtrail.jpg" alt="Nissan X-Trail">
-      </div>
-      <h5 class="car-title">Nissan X-Trail</h5>
-      <ul class="car-specs">
-        <li><strong>Двигатель:</strong> 2.0 л</li>
-        <li><strong>Мощность:</strong> 144 л.с.</li>
-        <li><strong>Коробка передач:</strong> Вариатор</li>
-        <li><strong>Привод:</strong> Полный</li>
-        <li><strong>Расход:</strong> 7.8 л/100 км</li>
-        <li><strong>Залог:</strong> <span class="highlight">25 000 руб.</span></li>
-      </ul>
-      <a href="cars/nissan-xtrail.html" class="rent-btn">Подробнее</a>
-    </div>
-  </div>
-
-</div>
-
   </div>
 </section>
 
@@ -209,5 +92,56 @@
   integrity="sha384-..."
   crossorigin="anonymous"
 ></script>
+
+<!-- Скрипт для динамического списка машин -->
+<script>
+  async function fetchCars() {
+    try {
+      // Если Django и cars.html лежат на одном домене/сервере, можно просто: '/api/cars/'
+      // Если нужен полный адрес, укажи http://127.0.0.1:8000/api/cars/
+      const response = await fetch('http://127.0.0.1:8000/api/cars/');
+      const cars = await response.json();
+      renderCars(cars);
+    } catch (error) {
+      console.error('Ошибка при загрузке списка авто:', error);
+    }
+  }
+
+  function renderCars(cars) {
+    const container = document.getElementById('carsContainer');
+    // Очищаем содержимое перед вставкой
+    container.innerHTML = '';
+
+    cars.forEach(car => {
+      // У некоторых полей (ImageField) DRF вернёт относительный путь '/media/cars/filename.jpg'
+      // Поэтому для картинки используем `src="${car.image}"` 
+      // или, если нужно, `src="http://127.0.0.1:8000${car.image}"`
+      container.innerHTML += `
+        <div class="col">
+          <div class="car-card">
+            <p class="price">от <span class="highlight">${car.price_per_day} руб.</span></p>
+            <div class="car-img">
+              <img src="${car.image}" alt="${car.name}">
+            </div>
+            <h5 class="car-title">${car.name}</h5>
+            <ul class="car-specs">
+              <li><strong>Двигатель:</strong> ${car.engine}</li>
+              <li><strong>Мощность:</strong> ${car.power}</li>
+              <li><strong>Коробка передач:</strong> ${car.transmission}</li>
+              <li><strong>Привод:</strong> ${car.drive}</li>
+              <li><strong>Расход:</strong> ${car.fuel_consumption}</li>
+              <li><strong>Залог:</strong> <span class="highlight">${car.deposit} руб.</span></li>
+            </ul>
+            <a href="#" class="rent-btn">Подробнее</a>
+          </div>
+        </div>
+      `;
+    });
+  }
+
+  // При загрузке страницы запросим данные
+  fetchCars();
+</script>
+
 </body>
 </html>
